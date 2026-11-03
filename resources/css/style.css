@@ -1,0 +1,158 @@
+/* page inscription */
+
+/* Structure globale */
+.global-wrapper { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f8fafc; min-height: 100vh; padding: 40px 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.register-container { max-width: 460px; width: 100%; margin: 0 auto; position: relative; z-index: 10; }
+
+/* Décorations d'arrière-plan */
+.bg-decoration { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.circle { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.4; }
+.circle-1 { background: #3b82f6; width: 300px; height: 300px; top: -50px; right: -50px; }
+.circle-2 { background: #60a5fa; width: 250px; height: 250px; bottom: -50px; left: -50px; }
+
+/* Logo & En-tête */
+.register-header { text-align: center; margin-bottom: 30px; }
+.logo-wrapper { width: 65px; height: 65px; background: white; border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px auto; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.12); border: 1px solid #eff6ff; }
+.logo-icon { font-size: 2rem; }
+.register-header h1 { margin: 0; color: #0f172a; font-size: 2.1rem; font-weight: 800; letter-spacing: -0.5px; }
+.subtitle { color: #64748b; font-size: 0.95rem; margin-top: 8px; line-height: 1.5; padding: 0 10px; }
+
+/* Carte d'inscription principale */
+.card-register { background: white; padding: 30px 25px; border-radius: 28px; box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(0, 0, 0, 0.01); border: 1px solid #f1f5f9; position: relative; overflow: hidden; }
+.card-indicator { position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, #3b82f6, #1d4ed8); }
+
+/* Double colonne Prénom / Nom */
+.input-row { display: flex; gap: 15px; }
+.input-row .input-group { flex: 1; }
+
+/* Champs formulaires */
+.input-group { margin-bottom: 18px; }
+.input-group label { display: block; font-size: 0.82rem; color: #334155; margin-bottom: 6px; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; }
+.input-with-icon { position: relative; display: flex; align-items: center; }
+.field-icon { position: absolute; left: 16px; font-size: 1.1rem; color: #94a3b8; pointer-events: none; z-index: 5; }
+
+input { width: 100%; padding: 13px 14px 13px 46px; border: 1px solid #e2e8f0; border-radius: 14px; font-size: 0.95rem; box-sizing: border-box; background: #f8fafc; color: #0f172a; font-weight: 500; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+input:focus { outline: none; border-color: #3b82f6; background: white; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); }
+
+/* Bouton Premium */
+.btn-submit { width: 100%; padding: 15px; border: none; border-radius: 14px; font-size: 1rem; font-weight: 700; color: white; background: linear-gradient(135deg, #3b82f6, #1d4ed8); cursor: pointer; margin-top: 8px; display: flex; justify-content: center; align-items: center; gap: 8px; box-shadow: 0 10px 20px rgba(29, 78, 216, 0.15); }
+.btn-arrow { font-size: 1.1rem; }
+
+/* Pied de page */
+.register-footer { text-align: center; margin-top: 25px; color: #64748b; font-size: 0.9rem; }
+.link { color: #3b82f6; font-weight: 700; cursor: pointer; text-decoration: none; margin-left: 3px; }
+.link:hover { text-decoration: underline; }
+
+
+
+/* page connexion */
+
+/* Structure globale */
+.global-wrapper { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f8fafc; min-height: 100vh; padding: 40px 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.app-container { max-width: 430px; width: 100%; padding: 25px; background: white; border-radius: 32px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.08); border: 1px solid #f1f5f9; height: fit-content; position: relative; z-index: 10; }
+
+/* Décorations arrière-plan */
+.bg-decoration { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.circle { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.35; }
+.circle-1 { background: #3b82f6; width: 300px; height: 300px; top: -50px; right: -50px; }
+.circle-2 { background: #60a5fa; width: 250px; height: 250px; bottom: -50px; left: -50px; }
+
+/* Logo & En-tête */
+.login-header { text-align: center; margin-bottom: 30px; }
+.logo-wrapper { width: 70px; height: 70px; background: #eff6ff; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.12); border: 1px solid #dbeafe; }
+.logo-icon { font-size: 2.2rem; }
+.login-header h1 { margin: 0; color: #0f172a; font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; }
+.subtitle { color: #64748b; font-size: 0.95rem; margin-top: 8px; line-height: 1.5; }
+
+/* Carte de connexion */
+.card-login { background: #f8fafc; padding: 30px 25px; border-radius: 24px; border: 1px solid #e2e8f0; position: relative; overflow: hidden; }
+.card-indicator { position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, #3b82f6, #1d4ed8); }
+
+/* Champs formulaires */
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; font-size: 0.8rem; color: #475569; margin-bottom: 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+.input-with-icon { position: relative; display: flex; align-items: center; width: 100%; }
+.field-icon { position: absolute; left: 14px; font-size: 1.05rem; color: #94a3b8; pointer-events: none; }
+input { width: 100%; padding: 12px 14px 12px 42px; border: 1px solid #cbd5e1; border-radius: 12px; font-size: 0.95rem; box-sizing: border-box; background: white; color: #0f172a; font-weight: 500; transition: border-color 0.2s; }
+input:focus { outline: none; border-color: #3b82f6; }
+
+/* Bouton Soumission */
+.btn-submit { width: 100%; padding: 14px; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 700; color: white; margin-top: 8px; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; transition: opacity 0.2s; }
+.btn-bleu { background: linear-gradient(135deg, #3b82f6, #1d4ed8); box-shadow: 0 6px 16px rgba(29, 78, 216, 0.15); }
+.btn-arrow { font-size: 1.1rem; }
+
+/* Pied de page */
+.login-footer { text-align: center; margin-top: 25px; color: #64748b; font-size: 0.9rem; }
+.link { color: #3b82f6; font-weight: 700; cursor: pointer; text-decoration: none; margin-left: 3px; }
+.link:hover { text-decoration: underline; }
+
+
+
+
+
+/* page accueil */
+
+/* Structure globale */
+.global-wrapper { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f8fafc; min-height: 100vh; padding: 40px 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.app-container { max-width: 430px; width: 100%; padding: 22px; background: white; border-radius: 32px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.08); border: 1px solid #f1f5f9; height: fit-content; position: relative; z-index: 10; }
+
+/* Décorations arrière-plan */
+.bg-decoration { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.circle { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.35; }
+.circle-1 { background: #3b82f6; width: 300px; height: 300px; top: -50px; right: -50px; }
+.circle-2 { background: #60a5fa; width: 250px; height: 250px; bottom: -50px; left: -50px; }
+
+/* En-tête / Profil */
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #f1f5f9; }
+.user-info { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 44px; height: 44px; background: #eff6ff; color: #1d4ed8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; border: 1px solid #dbeafe; }
+.user-info h3 { margin: 0; color: #0f172a; font-size: 1.05rem; font-weight: 700; }
+.role-badge { display: inline-block; padding: 1px 8px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; margin-top: 3px; }
+.role-badge.client { background: #e0f2fe; color: #0369a1; }
+.phone-display { color: #64748b; font-size: 0.85rem; font-weight: 600; background: #f8fafc; padding: 6px 12px; border-radius: 30px; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 5px; }
+
+/* Carte Bancaire du Solde */
+.card-solde { color: white; padding: 25px; border-radius: 22px; margin-bottom: 25px; position: relative; overflow: hidden; }
+.solde-bleu { background: linear-gradient(135deg, #3b82f6, #1d4ed8); box-shadow: 0 12px 24px rgba(29, 78, 216, 0.22); }
+.solde-header { display: flex; justify-content: space-between; align-items: center; }
+.solde-label { margin: 0; font-size: 0.82rem; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+.currency-badge { background: rgba(255, 255, 255, 0.2); font-size: 0.75rem; padding: 3px 8px; border-radius: 8px; font-weight: 700; }
+.solde-montant { margin: 12px 0 20px 0; font-size: 2.5rem; font-weight: 800; letter-spacing: -0.5px; }
+.card-footer-decoration { display: flex; justify-content: space-between; align-items: center; opacity: 0.9; }
+.card-chip { width: 30px; height: 22px; background: rgba(255, 255, 255, 0.25); border-radius: 4px; }
+.card-logo { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.5px; }
+
+/* Blocs d'actions & Historique */
+.card-action, .card-historique { background: #f8fafc; padding: 20px; border-radius: 20px; margin-bottom: 22px; border: 1px solid #e2e8f0; }
+.historique-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.historique-header .section-title { margin-bottom: 0; }
+.see-all { font-size: 0.82rem; color: #3b82f6; font-weight: 700; cursor: pointer; }
+.section-title { margin: 0 0 15px 0; color: #0f172a; font-size: 1rem; font-weight: 700; padding-left: 8px; }
+.title-bleu { border-left: 4px solid #3b82f6; }
+
+/* Formulaires */
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; font-size: 0.8rem; color: #475569; margin-bottom: 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+.input-with-icon { position: relative; display: flex; align-items: center; width: 100%; }
+.field-icon { position: absolute; left: 14px; font-size: 1.05rem; color: #94a3b8; pointer-events: none; }
+input { width: 100%; padding: 12px 14px 12px 42px; border: 1px solid #cbd5e1; border-radius: 12px; font-size: 0.95rem; box-sizing: border-box; background: white; color: #0f172a; font-weight: 500; transition: border-color 0.2s; }
+input:focus { outline: none; border-color: #3b82f6; }
+
+/* Bouton Soumission */
+.btn-submit { width: 100%; padding: 14px; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 700; color: white; margin-top: 8px; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; transition: opacity 0.2s; }
+.btn-bleu { background: linear-gradient(135deg, #3b82f6, #1d4ed8); box-shadow: 0 6px 16px rgba(29, 78, 216, 0.15); }
+.btn-arrow { font-size: 1.1rem; }
+
+/* Liste Historique */
+.liste-transactions { display: flex; flex-direction: column; gap: 10px; }
+.transaction-item { display: flex; justify-content: space-between; align-items: center; padding: 12px; border-radius: 12px; background: white; border: 1px solid #e2e8f0; }
+.tx-info { display: flex; align-items: center; gap: 12px; }
+.tx-icon { font-size: 1rem; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+.icon-out { background: #fee2e2; color: #ef4444; }
+.icon-in { background: #dcfce7; color: #10b981; }
+.tx-name { margin: 0; font-size: 0.88rem; font-weight: 600; color: #334155; }
+.tx-date { margin: 2px 0 0 0; font-size: 0.72rem; color: #94a3b8; }
+.tx-amount { font-weight: 700; font-size: 0.88rem; }
+.negative { color: #ef4444; }
+.positive { color: #10b981; }
+
